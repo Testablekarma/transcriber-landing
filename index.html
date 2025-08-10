@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Transcriber – Live Speech‑to‑Text & AI Summaries</title>
+  <meta name="description" content="Transcriber turns conversations into clear notes with live transcription, speaker labels, and concise AI summaries. Privacy-first.">
+  <link rel="icon" href="icon.png">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Transcriber – Live Speech‑to‑Text & AI Summaries">
+  <meta property="og:description" content="Live transcription, speaker labels, and privacy-first summaries.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://<your-username>.github.io/<repo>/">
+  <meta property="og:image" content="hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    :root{
+      --bg:#0b1320; --fg:#eaf1ff; --muted:#9fb3d9; --brand:#4ea3ff; --brand2:#5fe1ff;
+      --card:#0f1a2f; --ok:#39d98a;
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#ffffff; --fg:#0b1320; --muted:#4a5b7d; --card:#f6f9ff; }
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+         background:radial-gradient(1000px 600px at 20% -10%,rgba(94,225,255,.18),transparent),
+                    radial-gradient(800px 500px at 120% 20%,rgba(78,163,255,.18),transparent),
+                    var(--bg); color:var(--fg); line-height:1.6}
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{display:flex;align-items:center;gap:12px;font-weight:700;font-size:18px}
+    .logo img{width:28px;height:28px;border-radius:6px}
+    nav a{margin-left:16px;color:var(--muted)}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center;padding:48px 0}
+    .hero h1{font-size:clamp(28px,5vw,44px);line-height:1.1;margin:0 0 12px}
+    .kicker{color:var(--muted);font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+    .cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .btn{background:linear-gradient(90deg,var(--brand),var(--brand2));color:#001018;
+         padding:12px 18px;border-radius:12px;font-weight:700;box-shadow:0 10px 30px rgba(94,225,255,.25)}
+    .btn.secondary{background:transparent;color:var(--fg);border:1px solid rgba(158,181,217,.25)}
+    .cardgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:20px 0 40px}
+    .card{background:var(--card); padding:18px;border-radius:16px;border:1px solid rgba(158,181,217,.12)}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--muted)}
+    .screen{width:100%;border-radius:22px;border:1px solid rgba(158,181,217,.18);box-shadow:0 20px 60px rgba(0,0,0,.25)}
+    footer{border-top:1px solid rgba(158,181,217,.15);margin-top:40px;padding-top:18px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .ticks{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:10px}
+    .tick{display:flex;gap:8px;align-items:flex-start}
+    .badge{font-size:12px;background:rgba(94,225,255,.18);color:var(--brand2);padding:2px 8px;border-radius:999px}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "name":"Transcriber",
+    "operatingSystem":"iOS",
+    "applicationCategory":"BusinessApplication",
+    "offers":{"@type":"Offer","price":"6.99","priceCurrency":"GBP"},
+    "description":"Live speech-to-text with speaker labels and AI summaries. Privacy-first."
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <img src="icon-64.png" alt="Transcriber icon">
+        <span>Transcriber</span>
+      </div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+        <a href="privacy.html">Privacy & Terms</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="kicker">Live notes, zero hassle</div>
+        <h1>Turn conversations into clear, searchable notes.</h1>
+        <p class="mono">Accurate live transcription • Speaker labels • One‑tap summaries • Private by design</p>
+        <div class="cta">
+          <a class="btn" href="https://apps.apple.com/app/idXXXXXXXXX">Download on the App Store</a>
+          <a class="btn secondary" href="#features">See how it works</a>
+        </div>
+        <div class="ticks">
+          <div class="tick">✅ On‑device transcription available</div>
+          <div class="tick">✅ Works in 50+ languages</div>
+          <div class="tick">✅ Export to PDF • Word • Markdown</div>
+        </div>
+      </div>
+      <div>
+        <img class="screen" src="screenshot-hero.png" alt="Transcriber app screenshot">
+      </div>
+    </section>
+
+    <section id="features">
+      <h2>Why Transcriber</h2>
+      <div class="cardgrid">
+        <div class="card">
+          <h3>Live transcription</h3>
+          <p>See words appear instantly while you speak. Built for long meetings.</p>
+        </div>
+        <div class="card">
+          <h3>Who said what</h3>
+          <p>Automatic speaker labels keep your notes organised.</p>
+        </div>
+        <div class="card">
+          <h3>Smart summaries</h3>
+          <p>Concise, action‑oriented notes right after you stop recording.</p>
+        </div>
+        <div class="card">
+          <h3>Privacy first</h3>
+          <p>On‑device by default for supported languages. Cloud processing is optional.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <span class="badge">Privacy</span>
+      <p>Your audio is yours. On‑device transcription keeps data local. If you enable cloud features (e.g., enhanced summaries), data is sent securely and deleted after processing. Read the full policy <a href="privacy.html">here</a>.</p>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Transcriber</div>
+      <div>
+        <a href="mailto:support@yourdomain.com">support@yourdomain.com</a> ·
+        <a href="privacy.html">Privacy & Terms</a>
+      </div>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
+
